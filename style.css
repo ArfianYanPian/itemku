@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  width: 92%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* Navigation */
+.navbar {
+  background: #1a3fa0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.logo span {
+  color: #ffb020;
+}
+
+.btn-masuk {
+  background: #00a8e1;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-masuk:hover {
+  background: #0f52ba;
+}
+
+/* Section */
+.section {
+  padding-top: 40px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.section-head h2 {
+  font-size: 20px;
+  color: #1a3fa0;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.btn-lihat-semua {
+  border: 1px solid #1a3fa0;
+  color: #1a3fa0;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.btn-lihat-semua:hover {
+  background: #1a3fa0;
+  color: #fff;
+}
+
+/* Card row (menyamping, wrap ke bawah kalau layar sempit) */
+.card-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 4px 4px 12px;
+}
+
+/* Card */
+.card {
+  flex: 0 0 220px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-thumb {
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.05));
+}
+
+.platform {
+  position: relative;
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.thumb-1 {
+  background-image: url("Assets/Minecraft.jpg");
+}
+.thumb-2 {
+  background-image: url("Assets/Stardew.jpg");
+}
+.thumb-3 {
+  background-image: url("Assets/Terraria.jpg");
+}
+.thumb-4 {
+  background-image: url("Assets/Hogwarts.jpg");
+}
+.thumb-5 {
+  background-image: url("Assets/Palword.jpg");
+}
+.thumb-netflix {
+  background-image: url("Assets/Netflix.jpg");
+}
+.thumb-disney {
+  background-image: url("Assets/disney+.jpg");
+}
+.thumb-spotify {
+  background-image: url("Assets/spotify.jpg");
+}
+.thumb-youtube {
+  background-image: url("Assets/YouTube HD DP.jpg");
+}
+.thumb-prime {
+  background-image: url("Assets/Amazon video.jpg");
+}
+
+.platform {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.diskon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e10600;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 14px;
+  padding: 10px 12px 0;
+  color: #222;
+  min-height: 38px;
+}
+
+.card small {
+  padding: 4px 12px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.harga {
+  padding: 6px 12px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #e10600;
+}
+
+.harga-coret {
+  font-size: 11px;
+  font-weight: normal;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+
+.meta {
+  padding: 4px 12px 0;
+  font-size: 11px;
+  color: #888;
+}
+
+.star {
+  color: #f5a623;
+  font-weight: bold;
+}
+
+.btn-beli {
+  margin: 10px 12px 12px;
+  background: #1a3fa0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-beli:hover {
+  background: #123080;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 32px 0;
+}
+
+.footer-box {
+  text-align: center;
+}
+
+.footer-box h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-box p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.footer-box a {
+  color: #1a3fa0;
+}
+
+.footer-box hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 16px 0;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #999;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 160px;
+  }
+
+  .card-thumb {
+    height: 90px;
+  }
+
+  .section-head {
+    flex-wrap: wrap;
+  }
+
+  .btn-lihat-semua {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 140px;
+  }
+
+  .scroll-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
