@@ -49,6 +49,26 @@ body {
   color: #ffb020;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-link {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background: #e6e6e6;
+}
+
 .btn-masuk {
   background: #00a8e1;
   color: #fff;
@@ -66,6 +86,7 @@ body {
 /* Section */
 .section {
   padding-top: 40px;
+  scroll-margin-top: 76px;
 }
 
 .section-head {
@@ -155,20 +176,20 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.thumb-1 {
+.thumb-minecraft {
   background-image: url("Assets/Minecraft.jpg");
 }
-.thumb-2 {
+.thumb-stardew {
   background-image: url("Assets/Stardew.jpg");
 }
-.thumb-3 {
+.thumb-terraria {
   background-image: url("Assets/Terraria.jpg");
 }
-.thumb-4 {
+.thumb-hogwarts {
   background-image: url("Assets/Hogwarts.jpg");
 }
-.thumb-5 {
-  background-image: url("Assets/Palword.jpg");
+.thumb-palworld {
+  background-image: url("Assets/Palworld.jpg");
 }
 .thumb-netflix {
   background-image: url("Assets/Netflix.jpg");
@@ -184,15 +205,6 @@ body {
 }
 .thumb-prime {
   background-image: url("Assets/Amazon video.jpg");
-}
-
-.platform {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 4px;
 }
 
 .diskon {
@@ -317,6 +329,11 @@ footer {
   .btn-lihat-semua {
     display: none;
   }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -324,9 +341,17 @@ footer {
     flex: 0 0 140px;
   }
 
-  .scroll-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-link {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .btn-masuk {
+    padding: 8px 14px;
+    font-size: 13px;
   }
 }
