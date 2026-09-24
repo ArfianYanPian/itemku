@@ -6,11 +6,11 @@ Proyek ini adalah website sederhana hasil slicing halaman Itemku menggunakan HTM
 
 ## Tampilan
 
-| Perangkat |                Gambar                 |
-| :-------- | :-----------------------------------: |
-| Laptop    | ![Tampilan Laptop](Assets/Laptop.png) |
-| Tablet    | ![Tampilan Tablet](Assets/Tablet.png) |
-| HP        |     ![Tampilan HP](Assets/HP.png)     |
+| Perangkat |                    Gambar                     |
+| :-------- | :-------------------------------------------: |
+| Laptop    | ![Tampilan Laptop](Assets/TampilanLaptop.png) |
+| Tablet    | ![Tampilan Tablet](Assets/TampilanTablet.png) |
+| HP        |     ![Tampilan HP](Assets/TampilanHP.png)     |
 
 ---
 
@@ -18,7 +18,7 @@ Proyek ini adalah website sederhana hasil slicing halaman Itemku menggunakan HTM
 
 - Menampilkan daftar game key dan akun streaming yang dijual
 - Tampilan responsif untuk layar laptop, tablet, dan HP.
-- Menu navigasi otomatis ringkas di layar HP dan hanya menampilkan tombol Masuk.
+- Menu navigasi yang menampilkan tombol masuk, game,dan streaming.
 - Tombol Beli menampilkan pop up pesan untuk memasukkan Email pembeli.
 - Tombol Masuk menampilkan pop up pengiriman kode OTP ke email pengguna.
 
